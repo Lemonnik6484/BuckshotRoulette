@@ -352,9 +352,10 @@ def main(stdscr):
         while not valid_input:
                 key = stdscr.getch()
                 if key == ord("1"):
+                    valid_input = True
                     stop_event.set()
                     thread.join()
-                    pass
+                    restroom_menu()
                 elif key == ord("2"):
                     valid_input = True
                     stop_event.set()
@@ -384,7 +385,7 @@ def main(stdscr):
                 valid_input = True
                 main_menu()
 
-    def restroom():
+    def restroom_menu():
         clear_text()
         add_text(("RESTROOM", bold | italic))
         add_text(("", white))
