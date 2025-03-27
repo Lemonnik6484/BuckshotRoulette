@@ -28,7 +28,7 @@ icons = {
     ]
 }
 
-def log(string);
+def log(string):
     with open("latest.log", "a", encoding="utf-8") as f:
         f.write(f"{string}\n")
 
