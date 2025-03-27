@@ -1,2 +1,5 @@
 # Ignore scoreboard
 scoreboard.json
+
+# Ignore logs
+latest.log
