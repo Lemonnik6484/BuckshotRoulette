@@ -208,7 +208,7 @@ def draw_interface(stdscr):
 
     for i, answer in enumerate(data["answers"]):
         try:
-            stdscr.addstr(height//4*3+i*2, width//2-5, f" [{i + 1}] {answer}")
+            stdscr.addstr(height//4*3+i*2, width//2-5-len(max(data["answers"], key=len, default=None))//2, f" [{i + 1}] {answer}")
         except curses.error:
             pass
 
