@@ -391,10 +391,25 @@ def main(stdscr):
         add_text(("You are in the restroom", white))
         add_text(("", white))
         if not endless:
-            add_text(("There is a computer here", white))
-            add_text(("It looks out of place...", white))
+            add_text(("There is a computer in the sink", white))
+            add_text(("It looks out of place here...", white))
             add_text(("", white))
-            add_text((""))
+            add_text(("There's strange pills on the edge of the sink", white))
+            add_text(("Looks like someone forgot them or left them on purpose..."))
+        else:
+            add_text(("It's empty here", white))
+
+        data["answears"] = ["Turn on computer", "Take pills", "Leave restroom"]
+
+        valid_input = False
+        while not valid_input:
+            key = stdscr.getch()
+            if key == ord("1"):
+                pass
+            elif key == ord("2"):
+                pass
+            elif key == ord("3"):
+                pass
 
     main_menu()
 
