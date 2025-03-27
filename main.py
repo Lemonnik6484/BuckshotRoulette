@@ -396,11 +396,11 @@ def main(stdscr):
             add_text(("It looks out of place here...", white))
             add_text(("", white))
             add_text(("There's strange pills on the edge of the sink", white))
-            add_text(("Looks like someone forgot them or left them on purpose..."))
+            add_text(("Looks like someone forgot them or left them on purpose...", white))
         else:
             add_text(("It's empty here", white))
 
-        data["answears"] = ["Turn on computer", "Take pills", "Leave restroom"]
+        data["answers"] = ["Turn on computer", "Take pills", "Leave restroom"]
 
         valid_input = False
         while not valid_input:
